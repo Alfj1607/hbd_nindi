@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ucapan Selamat Ulang Tahun</title>
+    <style>
+        body {
+            background-color: #f0f8ff; /* Warna latar belakang yang cerah */
+            font-family: 'Arial', sans-serif;
+            text-align: center;
+            padding: 50px;
+            margin: 0;
+        }
+
+        #birthdayMessage {
+            font-size: 2em;
+            font-weight: bold;
+            color: #ff6347; /* Warna merah tomat */
+            white-space: nowrap;
+            position: absolute;
+            bottom: 10%; /* Menempatkan pesan sedikit di bawah */
+            left: 100%; /* Mulai di luar layar */
+            animation: moveMessage 10s linear infinite;
+        }
+
+        /* Animasi untuk menggerakkan teks */
+        @keyframes moveMessage {
+            0% {
+                left: 100%; /* Mulai di luar layar */
+            }
+            100% {
+                left: -100%; /* Bergerak keluar layar dari sisi kiri */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div id="birthdayMessage">
+        Selamat Ulang Tahun nindi,semoga panjang umur. anjay uda tua yah!
+    </div>
+
+    <script>
+        // Fungsi untuk menambahkan efek suara jika ingin
+        window.onload = function() {
+            const audio = new Audio('https://www.soundjay.com/button/beep-07.wav'); // Contoh suara klik (bisa diganti)
+            audio.play();
+        }
+    </script>
+
+</body>
+</html>
